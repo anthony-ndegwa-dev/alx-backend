@@ -11,8 +11,8 @@ system:
         If number of items in self.cache_data is higher than
         BaseCaching.MAX_ITEMS:
             you must discard the first item put in cache (LFU algorithm)
-	    if you find more than 1 item to discard, use LRU algorithm to 
-	    discard only the least recently used
+            if you find more than 1 item to discard, use LRU algorithm to
+            discard only the least recently used
             you must print DISCARD: with the key discarded followed by a new
             line def get(self, key):
         Must return the value in self.cache_data linked to key.
