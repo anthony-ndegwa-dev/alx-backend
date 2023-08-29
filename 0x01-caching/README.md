@@ -1,25 +1,18 @@
 # Cache
 
-## Cache Replacement Policies
-
-    FIFO, LIFO, LRU, MRU, LFU 
+## Cache Replacement Policies: `FIFO`, `LIFO`, `LRU`,`MRU`, `LFU`
 
 ## Requirements
-
-    All files should end with a new line
-    The first line of all files should be #!/usr/bin/env python3
-    Code should use the pycodestyle style (version 2.5)
-    All files must be executable
-    The length of your files will be tested using wc
-    All modules should have a documentation (python3 -c 'print(__import__("my_module").__doc__)')
-    All classes should have a documentation (python3 -c 'print(__import__("my_module").MyClass.__doc__)')
-    All functions (inside and outside a class) should have a documentation (python3 -c 'print(__import__("my_module").my_function.__doc__)' and python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)')
+* Code should use the `pycodestyle` (version 2.5)
+* All files must be executable
+* All modules should have a documentation (python3 -c 'print(__import__("my_module").__doc__)')
+* All classes should have a documentation (python3 -c 'print(__import__("my_module").MyClass.__doc__)')
+* All functions (inside and outside a class) should have a documentation (python3 -c 'print(__import__("my_module").my_function.__doc__)' and python3 -c 'print(__import__("my_module").MyClass.my_function.__doc__)')
    
-## More Info
- 
-    Parent class BaseCaching
-    All classes must inherit from BaseCaching defined below:
-
+## More Info:
+* Parent class `BaseCaching`
+* All classes must inherit from `BaseCaching` defined below:
+    ```
     #!/usr/bin/python3
     """ BaseCaching module"""
 
@@ -47,3 +40,4 @@
         def get(self, key):
             """ Get an item by key"""
             raise NotImplementedError("get must be implemented in your cache class")
+    ```
